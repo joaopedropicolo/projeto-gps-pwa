@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA GPS</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <h1>Mapa de Lugares Visitados</h1>
+
+  <button id="btnLocalizar">📍 Capturar Localização</button>
+
+  <div class="form">
+    <input id="nomeLugar" placeholder="Nome do lugar">
+    <button id="btnSalvar">Salvar</button>
+  </div>
+
+  <h2>Localizações Salvas</h2>
+  <div id="lista"></div>
+
+  <h2>Mapa</h2>
+  <iframe id="mapa" width="100%" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

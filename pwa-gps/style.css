@@ -1,0 +1,112 @@
+/* ======== RESET ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* ======== TÍTULOS ======== */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 5px;
+}
+
+/* ======== BOTÕES ======== */
+button {
+  background: #00c853;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #009b42;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ======== FORM ======== */
+.form {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  padding: 12px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* ======== LISTA DE LUGARES ======== */
+#lista {
+  margin-top: 15px;
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  margin-top: 12px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.item p {
+  margin-bottom: 5px;
+}
+
+.item button {
+  background: #2962ff;
+  margin-right: 10px;
+  padding: 8px 14px;
+}
+
+.item button:hover {
+  background: #0039cb;
+}
+
+.item button:last-child {
+  background: #d50000;
+}
+
+.item button:last-child:hover {
+  background: #9b0000;
+}
+
+/* ======== MAPA ======== */
+#iframe, #mapa {
+  border: none;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
